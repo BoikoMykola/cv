@@ -1,0 +1,30 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.header-block{
+  text-align: center;
+}
+h2{
+  background-color: #F1F3F4;
+}
+.common-info, .work-block{
+  display: flex;
+}
+.common-info{
+  justify-content: space-between;
+}
+.common-info td{
+  padding: 0 10px;
+}
+.photo{
+width: 200px;
+}
+.photo img{
+  width: 100%;
+}
+
+.work-block p{
+padding-right: 20px;
+}

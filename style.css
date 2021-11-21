@@ -1,30 +1,135 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 800px;
+  min-width: 320px;
   margin: 0 auto;
+  background-color: #C1C1C1;
 }
-.header-block{
+
+main {
+  background-color: #FFF;
+}
+
+.header-block {
   text-align: center;
 }
-h2{
+
+h1, h2 {
   background-color: #F1F3F4;
+  padding: 20px 30px;
+  margin: 0;
 }
-.common-info, .work-block{
+
+.common-info, .work-block, .education-block, .knowledge-block {
   display: flex;
 }
-.common-info{
+
+.common-info {
   justify-content: space-between;
 }
-.common-info td{
-  padding: 0 10px;
+
+.common-info, .work-block, .education-block,
+.language table, .knowledge-block {
+  padding-left: 15px;
 }
-.photo{
-width: 200px;
+
+.common-info td, .language td {
+  padding-right: 20px;
 }
-.photo img{
+
+.common-info, .language-info {
+  margin: 16px 0;
+}
+
+.photo {
+  width: 200px;
+}
+
+.photo img {
   width: 100%;
 }
 
-.work-block p{
-padding-right: 20px;
+.work-block, .education-block, .knowledge-block {
+  border-bottom: 1px solid #F1F3F4;
+}
+
+.work-block>p, .education-block>p, .knowledges {
+  padding-right: 20px;
+  min-width: 280px;
+  max-width: 280px;
+}
+
+.addition {
+  padding-bottom: 20px;
+}
+
+.accordion-panel {
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+
+.plus {
+  position: relative;
+  display: inline-block;
+  min-width: 14px;
+  height: 14px;
+  border: 1.5px solid #C1C1C1;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(127, 127, 127, 0.3);
+}
+
+.plus::before, .plus::after {
+  content: "";
+  width: 7px;
+  height: 1.5px;
+  background-color: #C1C1C1;
+  position: absolute;
+  left: 3.5px;
+  top: 6px;
+  transition: transform 0.3s ease 0s;
+}
+
+span::after {
+  transform: rotate(-90deg);
+}
+
+.accordion-body {
+  display: none;
+}
+
+.active-panel .accordion-header .plus::after {
+  transform: rotate(0deg);
+}
+
+.active-panel .accordion-body {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+    padding: 10px 15px;
+    text-align: center;
+  }
+  .common-info {
+    flex-direction: column-reverse;
+  }
+  .work-block, .education-block, .knowledge-block {
+    flex-direction: column;
+  }
+  .photo {
+    align-self: center;
+  }
+  .accordion-panel, .knowledge-block p:last-child{
+    padding-left: 20px;
+  }
+  .knowledges{
+    margin-bottom: 0;
+  }
 }

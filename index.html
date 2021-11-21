@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
   </head>
   <body>
     <header class="header-block">
       <h1>РЕЗЮМЕ</h1>
     </header>
 
-
     <main>
       <section>
         <h2>Цель: получение должности Junior Front-End Developer.</h2>
-  
-      </section> 
+      </section>
+
       <section class="common">
         <h2>Общие данные</h2>
         <div class="common-info">
@@ -68,68 +67,91 @@
             </tr>
           </table>
           <div class="photo">
-            <img src="/image/photo3.jpg" alt="Boiko Mykola" />
+            <img src="image/photo3.jpg" alt="Boiko Mykola" />
           </div>
         </div>
       </section>
-  
+
       <section class="work">
         <h2>Опыт работы</h2>
         <div class="work-block">
           <p>06.06.2008 – по настоящее время</p>
-          <div>
-            <p>ООО "УкрЭлТех", директор</p>
-            <ul>
-              <li>ведение переговоров.</li>
-            </ul>
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <p>ООО "УкрЭлТех", директор</p>
+              <span class="plus"></span>
+            </div>
+            <div class="accordion-body">
+              <ul>
+                <li>ведение переговоров.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="work-block">
           <p>01.09.2003 – 05.06.2008</p>
-          <div>
-            <p>ООО "ТРЕІ - Україна", отдел АСУТП-2, инженер,</p>
-            <ul>
-              <li>Разработка проектов автоматического управления.</li>
-            </ul>
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <p>ООО "ТРЕІ - Україна", отдел АСУТП-2, инженер</p>
+              <span class="plus"></span>
+            </div>
+            <div class="accordion-body">
+              <ul>
+                <li>Разработка проектов автоматического управления.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="education">
         <h2>Образование</h2>
-        <div>
-          <p>1998 – 2003</p>
-          <div>
-            <p>Национальний горный университет.</p>
-            <p>
-              Cпециальность "Системы управления и автоматики", квалификация
-              инженер-системотехник
-            </p>
+        <div class="education-block">
+          <p>1998 – 2003гг.</p>
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <p>Национальний горный университет.</p>
+              <span class="plus"></span>
+            </div>
+            <div class="accordion-body">
+              <p>
+                Cпециальность "Системы управления и автоматики", квалификация
+                инженер-системотехник
+              </p>
+            </div>
           </div>
         </div>
-        <div>
+        <div class="education-block">
           <p>2020 – 2021гг.</p>
-          <div>
-            <p>Компьютерная академия «ШАГ»</p>
-            <p>Front-End Developer</p>
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <p>Компьютерная академия «ШАГ»</p>
+              <span class="plus"></span>
+            </div>
+            <div class="accordion-body">
+              <p>Front-End Developer.</p>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="knowledge">
-        <h2>Ключевые знания, умения, навыки</h2> 
-        <p>
-          HTML5, CSS3, SASS/SCSS, Bootstrap,
-          JavaScript, jQuery, React, Git
-        </p> 
-        <p>
-          (1 год опыта) Средний уровень, использую в
-          настоящее время
-        </p> 
-        <p>NodeJS, Angular, WordPress, Adobe Photoshop</p> 
-        <p>Базовые знания</p>
+        <h2>Ключевые знания, умения, навыки</h2>
+        <div class="knowledge-block">
+          <p class="knowledges">
+            HTML5, CSS3, SASS/SCSS, Bootstrap, JavaScript, jQuery, React, Git
+          </p>
+          <p>(1 год опыта) Средний уровень, использую в настоящее время</p>
+        </div>
+        <div class="knowledge-block">
+          <p class="knowledges">NodeJS, Angular, WordPress, Adobe Photoshop</p>
+          <p>Базовые знания</p>
+        </div>
       </section>
+
       <section class="language">
-        <h2>Владение языками</h2> 
-        <table>
+        <h2>Владение языками</h2>
+        <table class="language-info">
           <tr>
             <td>Украинский</td>
             <td>Родной</td>
@@ -144,16 +166,18 @@
           </tr>
         </table>
       </section>
+      
       <section class="addition">
-        <h2>Личные качества</h2> 
+        <h2>Личные качества</h2>
         <ul>
           <li>Умение работать в коллективе</li>
-          <li>аналитическое мышление</li> 
-          <li>ответственность</li> 
-          <li>целеустремленность</li> 
+          <li>аналитическое мышление</li>
+          <li>ответственность</li>
+          <li>целеустремленность</li>
           <li>настойчивость и стремление к профессиональному росту.</li>
         </ul>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
